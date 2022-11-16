@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     void dash() 
     { 
+      //Change AddForce to a timed rb.velocity, then have it reset to the default. it should be gradual rather than instant, unless blink is wanted.
+      //if blink is wanted, reflect speed lines in animation for when blink is done. 
       rb.AddForce(dir * (speed * 100));
       Debug.Log("Dash Activated");
     }
