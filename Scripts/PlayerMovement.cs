@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     void dash() 
     { 
       rb.AddForce(dir * (speed * 100));
-      Debug.Log("BOOM");
+      Debug.Log("Dash Activated");
     }
 
     void Update()
